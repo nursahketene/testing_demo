@@ -12,12 +12,12 @@ fork this project: git clone https://git@github.com:rellu/testing_demo
 
 * install XCode: Go to app store, search and install XCode, this should be bundled with git. (Required for macports)
 * install git if not included in Xcode or using different OS: [git](http://git-scm.com/download)
-* (optional install rvm:) 
-
+* (optional install rvm:) (sudo is used here to install rvm for all users - when executing from jenkins the jenkins user needs to be able to use rvm as well) 
+		
 		sudo bash < <( curl -s https://rvm.beginrescueend.com/install/rvm )
-		rvm install 1.9.2
-		rvm use 1.9.2
-		rvm --default 1.9.2
+		sudo rvm install 1.9.2
+		sudo rvm use 1.9.2
+		sudo rvm --default 1.9.2
 	
 * install macports: [MacPorts](http://www.macports.org/install.php)
 		
@@ -171,6 +171,7 @@ It's easier to demonstrate the tests using ride.py editor. Open ride:
 TODO:
 =====
 
+* in robot tests there is a setup application keyword that sets up the tests. This uses rake db:reset to repopulate the database. However, this cannot be executed from jenkins for some reason. If you use jenkins, add shell execution for 'bundle exec rake db:reset' or try to fix the robot test to work with jenkins.
 * Layout looks too basic: add css
 * Add feature to browse resources for more days than today
 * Add more complex multi-user tests
