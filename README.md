@@ -171,7 +171,7 @@ It's easier to demonstrate the tests using ride.py editor. Open ride:
 TODO:
 =====
 
-* in robot tests there is a setup application keyword that sets up the tests. This uses rake db:reset to repopulate the database. However, this cannot be executed from jenkins for some reason. If you use jenkins, add shell execution for 'bundle exec rake db:reset' or try to fix the robot test to work with jenkins.
+* in robot tests there is a setup application keyword that sets up the tests. This uses rake db:reset to repopulate the database. However, this cannot be executed from jenkins for some reason. If you use jenkins, add shell execution for `bundle exec rake db:reset` or try to fix the robot test to work with jenkins.
 * Layout looks too basic: add css
 * Add feature to browse resources for more days than today
 * Add more complex multi-user tests
