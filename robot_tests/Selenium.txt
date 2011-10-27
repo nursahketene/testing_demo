@@ -14,7 +14,7 @@ ${output}  ${EMPTY}
 
 *** Test Cases ***
 Login with default user
-    Given Page Should Contain   You are not logged in
+    Given Page Should Contain  You are not logged in
     When I Log in
     Then Page Should Contain  Signed in as: First User
 
@@ -67,6 +67,12 @@ book a slot with second user
     And i log in  # default #default
     and open resource  # default
     then slot should be booked  3:00 - 4:00  Reserved for: Second User
+
+Logout
+    Given I Log in
+    When Logout
+    Then Page Should Contain  You are not logged in
+    [Teardown]
 
 *** Keywords ***
 I Log in

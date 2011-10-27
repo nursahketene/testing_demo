@@ -1,6 +1,6 @@
 #Login Scenario
 Given /^The user "user@example.com" has an account$/ do
- # @user = User.create!(:name => 'First Name', :password => 'please', :email => "user@example.com")
+  #the user account is automatically populated in db before every run.
 end
 
 module LoginSteps
@@ -26,7 +26,6 @@ Then /^he should see a link "([^"]*)"$/ do |logout|
 end
 
 #Logout Scenario
-
 Given /^I have logged in as any user$/ do
   login()
 end
