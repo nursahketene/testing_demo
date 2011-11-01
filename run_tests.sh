@@ -2,7 +2,7 @@
 source "/usr/local/rvm/scripts/rvm"
 rvm use 1.9.2
 ruby -v
-bundle install
+bundle install --path vendor/bundle
 bundle exec rake db:migrate
 bundle exec rake cucumber
 bundle exec rake db:reset
