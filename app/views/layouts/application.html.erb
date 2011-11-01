@@ -5,15 +5,23 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if lt IE 8]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
 </head>
-<body>
+<body class="blueprint bp two-col">
+	<div id="content">
   <ul class="hmenu">
     <%= render 'shared/navigation' %>
   </ul>
+  
   <%- flash.each do |name, msg| -%>
     <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
   <%- end -%>
 <%= yield %>
-
+  </div>
 </body>
 </html>

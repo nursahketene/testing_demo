@@ -1,11 +1,11 @@
 
 <% if user_signed_in? %>
-<h3> Resources </h3>
+<h2> Resources </h2>
 <% @resources.each do |resource| %>
 <p> <%=link_to resource.name, resource %> </p>
 	<% end %> 
 <p> Signed in as: <%= current_user.name %> </p>
 <% else %>
-<h3>Home</h3>
+<h2>Home</h2>
 <p>You are not logged in</p>
 <% end %>
