@@ -8,7 +8,7 @@ Installation
 
 Installation instructions for Mac OS X Lion. Follow all the installer instructions and install all required dependecies.
 
-fork this project: git clone https://git@github.com:rellu/testing_demo
+fork this project: git clone git@github.com:rellu/testing_demo
 
 * install firefox (to drive robot/selenium tests): [getfirefox](http://www.getfirefox.net/)
 * install XCode: Go to app store, search and install XCode, this should be bundled with git. (Required for macports)
