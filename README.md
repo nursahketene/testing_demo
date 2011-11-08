@@ -13,12 +13,14 @@ fork this project: git clone https://github.com/rellu/testing_demo
 * install firefox (to drive robot/selenium tests): [getfirefox](http://www.getfirefox.net/)
 * install XCode: Go to app store, search and install XCode, this should be bundled with git. (Required for macports)
 * install git if not included in Xcode or using different OS: [git](http://git-scm.com/download)
-* (optional install rvm:) (sudo is used here to install rvm for all users - when executing from jenkins the jenkins user needs to be able to use rvm as well) 
+* install rvm: (sudo is used here to install rvm for all users - when executing from jenkins the jenkins user needs to be able to use rvm as well) 
 		
 		sudo bash < <( curl -s https://rvm.beginrescueend.com/install/rvm )
 		sudo rvm install 1.9.2
 		sudo rvm use 1.9.2
 		sudo rvm --default 1.9.2
+
+**make sure you are using ruby version 1.9.2 or newer!**
 	
 * install macports: [MacPorts](http://www.macports.org/install.php)
 		
