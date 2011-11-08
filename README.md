@@ -27,6 +27,9 @@ fork this project: git clone https://github.com/rellu/testing_demo
 * install rails:
 	
 		gem install rails
+
+* install bundler:
+		gem install bundler
 	
 * install rake:
 	
