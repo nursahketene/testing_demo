@@ -6,21 +6,20 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if lt IE 8]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 </head>
-<body class="blueprint bp two-col">
+<body>
 	<div id="content">
-  <ul class="hmenu">
-    <%= render 'shared/navigation' %>
-  </ul>
-  
-  <%- flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-  <%- end -%>
+  		<ul class="nav">
+    		<%= render 'shared/navigation' %>
+  		</ul>
+  	<div class = "notice">
+  	<%- flash.each do |name, msg| -%>
+    	<%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+  	<%- end -%>
+	</div>
 <%= yield %>
   </div>
 </body>

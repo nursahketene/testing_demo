@@ -1,4 +1,4 @@
-
+<div class = "section_content">
 <% if user_signed_in? %>
 <h2> Resources </h2>
 <% @resources.each do |resource| %>
@@ -6,6 +6,10 @@
 	<% end %> 
 <p> Signed in as: <%= current_user.name %> </p>
 <% else %>
-<h2>Home</h2>
-<p>You are not logged in</p>
+<p class ="log_in_not">You are not logged in.</p>
+<p class ="log_in_not">
+	Please <%= link_to "Login", new_user_session_path()%>
+</p>
+<p class ="log_in_not">Or <%= link_to "Sign up", new_user_registration_path()%> </p>
 <% end %>
+</div>

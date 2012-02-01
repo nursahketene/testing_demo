@@ -1,0 +1,18 @@
+/* line 5, ../../app/assets/stylesheets/home.css.scss */
+.section_content {
+  width: 960px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+/* line 13, ../../app/assets/stylesheets/home.css.scss */
+.log_in_not {
+  font-size: 20px;
+  color: #80C0FF;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
