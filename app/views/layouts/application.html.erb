@@ -13,7 +13,7 @@
 <body>
 	<div id="content">
   		<ul class="nav">
-    		<%= render 'shared/navigation' %>
+    		<%= render 'shared/navigation' unless request.fullpath() != home_index_path()%>
   		</ul>
   	<div class = "notice">
   	<%- flash.each do |name, msg| -%>
