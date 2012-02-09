@@ -32,9 +32,10 @@ li{
 }
 
 .notice{
+	width:400px;
     margin-right:auto;
 	margin-left:auto;
-	margin-bottom:1em;
+	color:#FF4040;
 	clear:both;
 }
 
