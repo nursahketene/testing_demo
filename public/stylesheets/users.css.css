@@ -1,4 +1,9 @@
 /* line 5, ../../app/assets/stylesheets/users.css.scss */
+.shared_links {
+  font-size: 11px;
+}
+
+/* line 9, ../../app/assets/stylesheets/users.css.scss */
 .siging {
   margin-top: 50px;
   width: 400px;
@@ -6,7 +11,7 @@
   margin-left: auto;
 }
 
-/* line 12, ../../app/assets/stylesheets/users.css.scss */
+/* line 16, ../../app/assets/stylesheets/users.css.scss */
 .txt_input {
   height: 50px;
   width: 400px;
@@ -15,18 +20,18 @@
   font-size: 20px;
 }
 
-/* line 20, ../../app/assets/stylesheets/users.css.scss */
+/* line 24, ../../app/assets/stylesheets/users.css.scss */
 .input_holder {
   margin-bottom: 20px;
 }
 
-/* line 25, ../../app/assets/stylesheets/users.css.scss */
+/* line 29, ../../app/assets/stylesheets/users.css.scss */
 .remember_me {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-/* line 30, ../../app/assets/stylesheets/users.css.scss */
+/* line 34, ../../app/assets/stylesheets/users.css.scss */
 .submit_button {
   width: 400px;
   height: 50px;
@@ -39,7 +44,7 @@
   margin-bottom: 2em;
 }
 
-/* line 42, ../../app/assets/stylesheets/users.css.scss */
+/* line 46, ../../app/assets/stylesheets/users.css.scss */
 .submit_button:hover {
   border: 1px solid #3333FF;
 }
