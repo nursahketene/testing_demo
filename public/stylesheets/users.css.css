@@ -1,4 +1,12 @@
 /* line 5, ../../app/assets/stylesheets/users.css.scss */
+.siging {
+  margin-top: 50px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 12, ../../app/assets/stylesheets/users.css.scss */
 .txt_input {
   height: 50px;
   width: 400px;
@@ -7,26 +15,31 @@
   font-size: 20px;
 }
 
-/* line 13, ../../app/assets/stylesheets/users.css.scss */
+/* line 20, ../../app/assets/stylesheets/users.css.scss */
 .input_holder {
   margin-bottom: 20px;
 }
 
-/* line 18, ../../app/assets/stylesheets/users.css.scss */
+/* line 25, ../../app/assets/stylesheets/users.css.scss */
 .remember_me {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-/* line 23, ../../app/assets/stylesheets/users.css.scss */
+/* line 30, ../../app/assets/stylesheets/users.css.scss */
 .submit_button {
   width: 400px;
-  height: 40px;
-  border: 1px solid #FF4040;
+  height: 50px;
+  border: 1px solid #3366FF;
   border-radius: 2px;
-  color: #FF4040;
+  color: white;
   font-size: 20px;
-  background: linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%, #f5f7f9 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f8f9), color-stop(50%, #e5ebee), color-stop(99%, #d7dee3), color-stop(100%, #f5f7f9));
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#33ccff), to(#3366ff));
   margin-bottom: 2em;
+}
+
+/* line 42, ../../app/assets/stylesheets/users.css.scss */
+.submit_button:hover {
+  border: 1px solid #3333FF;
 }
